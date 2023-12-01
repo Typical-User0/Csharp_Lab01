@@ -24,14 +24,14 @@
             points = new Point[] { point1, point2, point3 };
         }
 
-        public Figure(Point point1, Point point2, Point point3, Point point4)
+        public Figure(Point point1, Point point2, Point point3, Point point4): this(point1, point2, point3)
         {
-            points = new Point[] { point1, point2, point3, point4 };
+            points.Append(point4);
         }
 
-        public Figure(Point point1, Point point2, Point point3, Point point4, Point point5)
+        public Figure(Point point1, Point point2, Point point3, Point point4, Point point5): this(point1, point2, point3, point4)
         {
-            points = new Point[] { point1, point2, point3, point4, point5 };
+            points.Append(point5);
         }
 
         private double LengthSide(Point A, Point B)

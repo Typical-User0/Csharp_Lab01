@@ -22,15 +22,9 @@
             return 2 * (side1 + side2);
         }
 
-        public double Area
-        {
-            get { return CalculateArea(); }
-        }
+        public double Area => CalculateArea();
 
-        public double Perimeter
-        {
-            get { return CalculatePerimeter(); }
-        }
+        public double Perimeter => CalculatePerimeter();
     }
 
     class Program
@@ -47,12 +41,6 @@
 
             Console.WriteLine($"Периметр прямоугольника: {rectangle.Perimeter}");
             Console.WriteLine($"Площадь прямоугольника: {rectangle.Area}");
-
-            TestRectangle();
-        }
-
-        static void TestRectangle()
-        {
 
         }
     }
